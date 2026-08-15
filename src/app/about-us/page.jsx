@@ -7,7 +7,7 @@ const AboutPage = () => {
   return (
     <div>
         
-      <div className="w-full h-[400px] lg:h-[700px]">
+      <div className="w-full sm:h-[400px] md:h-[500px] lg:h-[700px]">
         <Image
           src={AboutBanner}
           alt=" About Banner"

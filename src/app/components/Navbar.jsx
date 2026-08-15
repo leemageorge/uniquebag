@@ -13,7 +13,7 @@ const Navbar = () => {
         <button onClick={() => setMenuOpen(!menuOpen)}>
           {menuOpen ? (<X className=' text-[#9B7057] text-right'/>) :(<MenuIcon className=' text-[#9B7057]'/>)}
         </button>
-        <span className='font-[500] tracking-[2px] text-gray-600'>UNIQUE BAGS</span>
+        <Link href={'/'} onClick={()=>setMenuOpen(false)} className='font-[500] tracking-[2px] text-gray-600'>UNIQUE BAGS</Link>
      
     </div>
        {
