@@ -3,17 +3,15 @@ export const navbarLinks = [
         title: "Home",
         link:"/"
     },
+    
     {
-        title:"Collections",
-        link:"/collections"
+        title:"Exclusive Collections",
+        link:"/exclusive-collections"
     },
+   
     {
-        title:"New Arrivals",
-        link:"/new-arrivals"
-    },
-    {
-        title:"Custom Made",
-        link:"/custom-made"
+        title:"Find Your Perfect Carry",
+        link:"/find-perfect-carry"
     },
     {
         title:"About Us",
@@ -54,38 +52,44 @@ export const featuredData = [
     }
 ]
 
-import MusicalBag from "../assets/musicInstrument/keyboard1.webp"
-import DeliveryBag from "../assets/DeliveryBag/deliverybag.webp"
-import TravelBag from "../assets/travelbag/travelbag.webp"
-import CameraBag from "../assets/camerabag/camerabag.webp"  
+import MusicalBag from "../assets/musicInstrument/violinbag3.webp"
+import DeliveryBag from "../assets/DeliveryBag/deliverybag4.webp"
+import TravelBag from "../assets/travelbag/travelbag8.webp"
+import CameraBag from "../assets/camerabag/camerabag6.webp"  
 import CollegeBag from "../assets/collegeBag/collegebag2.webp"
 import Ladiesbag from "../assets/ladiesbag/ladies2.webp"
 
 export const categoryBagData = [
     {
         title:"Musical Instrument Bags",
-        src: MusicalBag
+        src: MusicalBag,
+        link:"/exclusive-collections"
     },
     {
         title:"Delivery Bags",
-        src: DeliveryBag
+        src: DeliveryBag,
+        link:"/find-perfect-carry"
     },
     {
         title:"Travel Bags",
-        src: TravelBag
+        src: TravelBag,
+        link:"/find-perfect-carry"
     },
     {
         title:"Camera Bags",
-        src: CameraBag
+        src: CameraBag,
+        link:"/find-perfect-carry"
     },
     
     {
         title:"College Bags",
-        src: CollegeBag
+        src: CollegeBag,
+            link:"/find-perfect-carry"
     },
     {
         title:"Ladies Bags",
-        src: Ladiesbag
+        src: Ladiesbag,
+        link:"/find-perfect-carry"
     },
 ]
 
@@ -119,20 +123,20 @@ export const contactInfo = [
 ]
 // import { Facebook, Instagram, MessageCircle } from "lucide-react";
 
-// export const socialLinks = [
-//   {
-//     name: "Facebook",
-//     icon: Facebook,
-//     href: "https://facebook.com/",
-//   },
-//   {
-//     name: "Instagram",
-//     icon: Instagram,
-//     href: "https://instagram.com/",
-//   },
-//   {
-//     name: "WhatsApp",
-//     icon: MessageCircle,
-//     href: "https://wa.me/919876543210", // Replace with your WhatsApp number
-//   },
-// ]
+export const socialLinks = [
+  {
+    name: "Facebook",
+    // icon: Facebook,
+    href: "https://facebook.com/",
+  },
+  {
+    name: "Instagram",
+    // icon: Instagram,
+    href: "https://instagram.com/",
+  },
+  {
+    name: "WhatsApp",
+    // icon: MessageCircle,
+    href: "https://wa.me/919447060659", // Replace with your WhatsApp number
+  },
+]

@@ -1,6 +1,6 @@
 import { contactInfo, navbarLinks, socialLinks } from '@/data/data'
 import React from 'react'
-import Logo from "../../assets/logo.png"
+import Logo from "../../assets/logo.webp"
 import Image from 'next/image'
 const Footer = () => {
   return (
@@ -11,11 +11,11 @@ const Footer = () => {
                   <Image
                     src={Logo}
                     alt="Logo Image"
-                    className="w-16 h-16  object-cover  "
+                    className="w-40 h-16  object-cover  "
                   />
-                  <h3 className="font-bold tracking-[3px] text-lg text-gray-600   ">
+                  {/* <h3 className="font-bold tracking-[3px] text-lg text-gray-600   ">
                     UNIQUE BAGS
-                  </h3>
+                  </h3> */}
                 </div>
         <p className='text-gray-500 leading-[30px] text-md'>Designed to deliver exceptional quality, lasting performance, and modern style, our bags are made to meet every journey with confidence.</p>
       </div>
@@ -27,9 +27,15 @@ const Footer = () => {
           ))
         }
       </div>
-       <div>
+       <div className="space-y-4">
             <h3 className="font-bold tracking-[3px] text-lg text-gray-600   ">Social Media Links</h3>
-            
+            {
+              socialLinks.map((item,index)=>(
+                <div key={index}  className= 'text-gray-500 text-md'>{item.name}
+
+                </div>
+              ))
+            }
       </div> 
 
   <div className="space-y-4">

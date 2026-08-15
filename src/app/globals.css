@@ -21,4 +21,5 @@
 body {
   background: var(--background);
   font-family: "Nata Sans", sans-serif;
+   cursor: none;
 }
