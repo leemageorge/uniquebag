@@ -14,13 +14,13 @@ const AboutPage = () => {
           className="lg:w-full lg:h-full object-cover"
         />
       </div>
-       <FeatureData />
+       {/* <FeatureData /> */}
       <div className="container mx-auto px-4 lg:px-0 mt-20 space-y-5 ">
         <h2 className="text-center text-xl font-bold uppercase tracking-tighter">
           Beyond the Dream, Since 2004
         </h2>
         <h3 className="text-center text-4xl font-bold uppercase tracking-[2px]">
-          Uniquely Crafted. Built to Last.
+          Uniquely Crafted Built to Last
         </h3>
         <p className="text-lg leading-[30px] text-gray-500">
           Since 2004, Unique Bags has been driven by a simple vision — to create

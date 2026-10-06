@@ -103,17 +103,17 @@ export const contactInfo = [
   {
     icon: MapPin,
     title: "Address",
-    value: "Kochi, Kerala, India",
+    value: "Kuthiyathode P O. NH66 Door No:6/391  Piller No: 234 Kodamthuruth Chammanadu 688533",
   },
   {
     icon: Phone,
     title: "Phone",
-    value: "+91 98765 43210",
+    value: "+91 9447060659",
   },
   {
     icon: Mail,
     title: "Email",
-    value: "info@uniquebags.com",
+    value: "kuttanbags897@gmail.com",
   },
   {
     icon: Clock,

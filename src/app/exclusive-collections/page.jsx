@@ -21,7 +21,7 @@ const Collections = () => {
             musicInsrumentData.map((instrument,index)=>(
                 <div key={index} className='bg-[#EFE4D6] rounded-2xl p-8  flex flex-col items-center justify-center w-96 h-96'>
                     <Image src={instrument.src} alt={instrument.heading} className='w-full h-full object-contain ' />
-                    <div className={`${roboto.className} text-md font-bold text-center text-[#b4540f]} uppercase border-t-2 border-[#221403] 
+                    <div className={`${roboto.className} text-md font-bold text-center text-[#b4540f]} uppercase 
                     py-2`}> {instrument.heading}</div>
                 </div>
             ))
