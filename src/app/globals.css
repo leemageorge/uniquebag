@@ -23,3 +23,62 @@ body {
   font-family: "Nata Sans", sans-serif;
    cursor: none;
 }
+@keyframes moveUp {
+  0%
+   {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(-30px);
+  }
+}
+
+.animate-move-up {
+  animation: moveUp 2s ease-in-out ;
+}
+
+@keyframes moveDown {
+  0%
+   {
+    transform: translateY(30px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.animate-move-down {
+  animation: moveDown 2s ease-in-out ;
+}
+
+@keyframes moveLeft {
+  0%
+   {
+    transform: translateX(30px);
+  }
+
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+.animate-move-left {
+  animation: moveLeft 2s ease-in-out ;
+}
+
+@keyframes moveRight {
+  0%
+   {
+    transform: translateX(-30px);
+  }
+
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+.animate-move-right {
+  animation: moveRight 2s ease-in-out ;
+}

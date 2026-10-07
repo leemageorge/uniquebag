@@ -1,4 +1,5 @@
 'use client'
+import { motion } from 'framer-motion'
 import { categoryBagData } from '@/data/data'
 import Image from 'next/image'
 import React from 'react'
@@ -35,15 +36,28 @@ const FindPerfectCarry = () => {
           {/* right section after banner */}
           <div className="flex flex-col  gap-6">
             <div>
-              <h4 className="text-xl text-gray-500 font-bold tracking-[2px] uppercase mb-6">
+              <motion.h4 className="text-xl text-gray-500 font-bold tracking-[2px] uppercase mb-6"
+                initial={{ opacity: 0, x: 30 }}
+             whileInView={{ opacity: 1, x: 0 }}
+             viewport={{ once: false }}
+             transition={{
+               duration: 0.5,
+               ease: "easeOut",
+             }}>
                 Camera Bag
-              </h4>
+              </motion.h4>
               <div className="flex flex-wrap items-center justify-center gap-2">
                 {categorycamera.map((item, index) => (
-                  <div
+                  <motion.div
                     key={index}
                     className="w-56 h-80 rounded-t-full bg-[#EFE4D6] flex flex-col items-center justify-between p-4"
-                  >
+                    initial={{ opacity: 0, x: -30 }}
+             whileInView={{ opacity: 1, x: 0 }}
+             viewport={{ once: false }}
+             transition={{
+               duration: 0.5,
+               ease: "easeOut",
+             }}>
                     <div className="flex items-center justify-center w-full h-full">
                       <Image
                         src={item.src}
@@ -64,18 +78,32 @@ const FindPerfectCarry = () => {
                     >
                       ORDER NOW
                     </button>
-                  </div>
+                  </motion.div>
                 ))}
               </div>
             </div>
 
             <div>
-              <h4 className="text-xl text-gray-500 font-bold tracking-[2px] uppercase mb-6">
+              <motion.h4 className="text-xl text-gray-500 font-bold tracking-[2px] uppercase mb-6"
+                initial={{ opacity: 0, x: -30 }}
+             whileInView={{ opacity: 1, x: 0 }}
+             viewport={{ once: false }}
+             transition={{
+               duration: 0.5,
+               ease: "easeOut",
+             }}>
                 Delivery Bag
-              </h4>
+              </motion.h4>
               <div className="flex flex-wrap items-center justify-center gap-2">
                 {categoryDeliverybag.map((item, index) => (
-                  <div
+                  <motion.div
+                    initial={{ opacity: 0, x: 30 }}
+             whileInView={{ opacity: 1, x: 0 }}
+             viewport={{ once: false }}
+             transition={{
+               duration: 0.5,
+               ease: "easeOut",
+             }}
                     key={index}
                     className="w-56 h-80 rounded-t-full bg-[#EFE4D6] flex flex-col items-center justify-between p-4"
                   >
@@ -99,18 +127,33 @@ const FindPerfectCarry = () => {
                     >
                       ORDER NOW
                     </button>
-                  </div>
+                  </motion.div>
                 ))}
               </div>
             </div>
 
             <div>
-              <h4 className="text-xl text-gray-500 font-bold tracking-[2px] uppercase mb-6">
+              <motion.h4 className="text-xl text-gray-500 font-bold tracking-[2px] uppercase mb-6"
+                initial={{ opacity: 0, x: 30 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: false }}
+                transition={{
+                  duration: 0.5,
+                  ease: "easeOut",
+                }}
+              >
                 Travel Bag
-              </h4>
+              </motion.h4>
               <div className="flex flex-wrap items-center justify-center gap-2">
                 {categoryTravelBag.map((item, index) => (
-                  <div
+                  <motion.div
+                    initial={{ opacity: 0, x: -30 }}
+             whileInView={{ opacity: 1, x: 0 }}
+             viewport={{ once: false }}
+             transition={{
+               duration: 0.5,
+               ease: "easeOut",
+             }}
                     key={index}
                     className="w-56 h-80 rounded-t-full bg-[#EFE4D6] flex flex-col items-center justify-between p-4"
                   >
@@ -134,17 +177,31 @@ const FindPerfectCarry = () => {
                     >
                       ORDER NOW
                     </button>
-                  </div>
+                  </motion.div>
                 ))}
               </div>
             </div>
             <div>
-              <h4 className="text-xl text-gray-500 font-bold tracking-[2px] uppercase mb-6">
+              <motion.h4 className="text-xl text-gray-500 font-bold tracking-[2px] uppercase mb-6"
+                initial={{ opacity: 0, x: -30 }}
+             whileInView={{ opacity: 1, x: 0 }}
+             viewport={{ once: false }}
+             transition={{
+               duration: 0.5,
+               ease: "easeOut",
+             }}>
                 College Bag
-              </h4>
+              </motion.h4>
               <div className="flex flex-wrap items-center justify-center gap-2">
                 {categoryCollegebag.map((item, index) => (
-                  <div
+                  <motion.div
+                    initial={{ opacity: 0, x:30 }}
+             whileInView={{ opacity: 1, x: 0 }}
+             viewport={{ once: false }}
+             transition={{
+               duration: 0.5,
+               ease: "easeOut",
+             }}
                     key={index}
                     className="w-56 h-80 rounded-t-full bg-[#EFE4D6] flex flex-col items-center justify-between p-4"
                   >
@@ -168,18 +225,32 @@ const FindPerfectCarry = () => {
                     >
                       ORDER NOW
                     </button>
-                  </div>
+                  </motion.div>
                 ))}
               </div>
             </div>
 
             <div>
-              <h4 className="text-xl text-gray-500 font-bold tracking-[2px] uppercase mb-6">
+              <motion.h4 className="text-xl text-gray-500 font-bold tracking-[2px] uppercase mb-6"
+                initial={{ opacity: 0, x: 30 }}
+             whileInView={{ opacity: 1, x: 0 }}
+             viewport={{ once: false }}
+             transition={{
+               duration: 0.5,
+               ease: "easeOut",
+             }}>
                 Ladies Bag
-              </h4>
+              </motion.h4>
               <div className="flex flex-wrap items-center justify-center gap-2">
                 {categoryLadiesBag.map((item, index) => (
-                  <div
+                  <motion.div
+                    initial={{ opacity: 0, x: -30 }}
+             whileInView={{ opacity: 1, x: 0 }}
+             viewport={{ once: false }}
+             transition={{
+               duration: 0.5,
+               ease: "easeOut",
+             }}
                     key={index}
                     className="w-56 h-80 rounded-t-full bg-[#EFE4D6] flex flex-col items-center justify-between p-4"
                   >
@@ -204,7 +275,7 @@ const FindPerfectCarry = () => {
                       ORDER NOW
                     </button>
 
-                  </div>
+                  </motion.div>
                 ))}
               </div>
             </div>

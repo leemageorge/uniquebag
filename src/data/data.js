@@ -61,7 +61,7 @@ import Ladiesbag from "../assets/ladiesbag/ladies2.webp"
 
 export const categoryBagData = [
     {
-        title:"Instrument Bags",
+        title:"Musical Instrument Bags",
         src: MusicalBag,
         link:"/exclusive-collections"
     },
@@ -139,4 +139,26 @@ export const socialLinks = [
     // icon: MessageCircle,
     href: "https://wa.me/919447060659", // Replace with your WhatsApp number
   },
+]
+export const skilledData = [
+  {
+    title: "Trusted Quality",
+    desc: "Reliable materials and careful production for dependable products",
+    icon: "BadgeCheck"
+  },
+  {
+  title: "Comfort & Convenience",
+  desc: "Designed for comfortable carrying and convenient everyday use",
+  icon: "Heart"
+    },
+  {
+    title: "Versatile Collection",
+    desc: "A diverse collection designed for travel, work, music and everyday life",
+    icon: "Briefcase"
+  },
+  {
+    title: "Made for You",
+    desc: "Flexible options to meet different styles, purposes and requirements",
+    icon: "Handshake"
+  }
 ]

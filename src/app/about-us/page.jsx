@@ -1,7 +1,9 @@
+'use client';
 import Image from "next/image";
 import React from "react";
 import AboutBanner from "../../assets/aboutBanner.webp";
-import FeatureData from "../components/FeatureData";
+import SkillData from "../components/SkillData";
+import { motion } from "framer-motion";
 
 const AboutPage = () => {
   return (
@@ -13,15 +15,37 @@ const AboutPage = () => {
           className="lg:w-full lg:h-full object-cover"
         />
       </div>
-      {/* <FeatureData /> */}
+      <SkillData />
       <div className="container mx-auto px-4 lg:px-0 mt-20 space-y-5 ">
-        <h2 className="text-center text-xl font-bold uppercase tracking-tighter">
+        <motion.h2 className="text-center text-xl font-bold uppercase tracking-tighter"
+          initial={{ opacity: 0, x: -30 }}
+             whileInView={{ opacity: 1, x: 0 }}
+             viewport={{ once: false }}
+             transition={{
+               duration: 0.5,
+               ease: "easeOut",
+             }}
+        >
           Beyond the Dream, Since 2004
-        </h2>
-        <h3 className="text-center text-4xl font-bold uppercase tracking-[2px]">
+        </motion.h2>
+        <motion.h3 className="text-center text-4xl font-bold uppercase tracking-[2px]"
+        initial={{ opacity: 0, x: 30 }}
+             whileInView={{ opacity: 1, x: 0 }}
+             viewport={{ once: false }}
+             transition={{
+               duration: 0.5,
+               ease: "easeOut",
+             }}>
           Uniquely Crafted Built to Last
-        </h3>
-        <p className="text-lg leading-[30px] text-gray-500">
+        </motion.h3>
+        <motion.p className="text-lg leading-[30px] text-gray-500"
+        initial={{ opacity: 0, y: -30 }}
+             whileInView={{ opacity: 1, y: 0 }}
+             viewport={{ once: false }}
+             transition={{
+               duration: 0.5,
+               ease: "easeOut",
+             }}>
           Since 2004 Unique Bags has had a vision. To make bags that are not
           only useful but also show quality, uniqueness and long-lasting work.
           What started as a dream based on love and hard work has become a name
@@ -42,7 +66,7 @@ const AboutPage = () => {
           journey since 2004. From an idea to a bag each one shows our promise
           to do things right with care and, with a purpose. 20+ Years of Making
           Things Well. One Special Name.
-        </p>
+        </motion.p>
       </div>
     </div>
   );

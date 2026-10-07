@@ -66,7 +66,6 @@ export const metadata = {
   "custom bag manufacturer in Cherthala",
   "custom bag manufacturer in Kerala",
 ]
-
 };
 
 export default function RootLayout({ children }) {

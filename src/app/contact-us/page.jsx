@@ -1,5 +1,5 @@
 "use client";
-
+import { motion } from "framer-motion";
 import Image from "next/image";
 import React, { useState } from "react";
 import Contactbanner from "../../assets/contactbanner1.webp"
@@ -58,15 +58,36 @@ ${formData.message}
 
           {/* Left Content */}
           <div>
-  <p className="text-[#8A6348] uppercase tracking-[3px] text-sm font-semibold mb-4">
+  <motion.p className="text-[#8A6348] uppercase tracking-[3px] text-sm font-semibold mb-4"
+       initial={{ opacity: 0, x: -30 }}
+             whileInView={{ opacity: 1, x: 0 }}
+             viewport={{ once: false }}
+             transition={{
+               duration: 0.5,
+               ease: "easeOut",
+             }}>
     Get In Touch
-  </p>
+  </motion.p>
 
-  <h2 className="text-4xl lg:text-5xl font-serif text-[#4A2F20] leading-tight">
-    We Fulfill
-    <br />
-    <span className="italic">Your Style</span>
-  </h2>
+  <motion.h2 className="text-4xl lg:text-5xl font-serif text-[#4A2F20] leading-tight"
+    initial={{ opacity: 0, x: 30 }}
+           whileInView={{ opacity: 1, x: 0 }}
+           viewport={{ once: false }}
+           transition={{
+             duration: 0.5,
+             ease: "easeOut",
+           }}>
+    We Fulfill Your Bag Needs <br />
+ 
+    <motion.span className="italic"
+    initial={{ opacity: 0, x: -30 }}
+             whileInView={{ opacity: 1, x: 0 }}
+             viewport={{ once: false }}
+             transition={{
+               duration: 0.5,
+               ease: "easeOut",
+             }}>Your Style</motion.span>
+  </motion.h2>
 
   <p className="mt-6 text-[#765D4D] leading-7 max-w-lg">
     Have a question, need a custom bag, or looking for more
@@ -75,7 +96,14 @@ ${formData.message}
   </p>
 
   {/* Contact Details */}
-  <div className="mt-8 space-y-5">
+  <motion.div className="mt-8 space-y-5"
+  initial={{ opacity: 0, x: -30 }}
+             whileInView={{ opacity: 1, x: 0 }}
+             viewport={{ once: false }}
+             transition={{
+               duration: 0.5,
+               ease: "easeOut",
+             }}>
 
     {/* Location */}
     <div className="flex items-start gap-4">
@@ -140,11 +168,18 @@ ${formData.message}
       </div>
     </a>
 
-  </div>
+  </motion.div>
 </div>
 
           {/* Contact Form */}
-          <div className="bg-white rounded-3xl p-6 md:p-8 lg:p-10 shadow-sm">
+          <motion.div className="bg-white rounded-3xl p-6 md:p-8 lg:p-10 shadow-sm"
+          initial={{ opacity: 0, x: 30 }}
+             whileInView={{ opacity: 1, x: 0 }}
+             viewport={{ once: false }}
+             transition={{
+               duration: 0.5,
+               ease: "easeOut",
+             }}>
 
             <form onSubmit={handleSubmit} className="space-y-5">
 
@@ -208,7 +243,7 @@ ${formData.message}
               </a>
             </div>
             </form>
-          </div>
+          </motion.div>
 
         </div>
       </div>
