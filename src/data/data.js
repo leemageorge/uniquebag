@@ -61,7 +61,7 @@ import Ladiesbag from "../assets/ladiesbag/ladies2.webp"
 
 export const categoryBagData = [
     {
-        title:"Musical Instrument Bags",
+        title:"Instrument Bags",
         src: MusicalBag,
         link:"/exclusive-collections"
     },

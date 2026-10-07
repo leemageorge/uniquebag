@@ -89,7 +89,7 @@ ${formData.message}
         </p>
 
         <p className="text-[#765D4D] leading-6">
-          Uthiyathode P.O., NH66
+          Kuthiyathode P.O., NH66
           <br />
           Door No: 6/391, Piller No: 234
           <br />
