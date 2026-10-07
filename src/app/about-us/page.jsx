@@ -6,7 +6,6 @@ import FeatureData from "../components/FeatureData";
 const AboutPage = () => {
   return (
     <div>
-        
       <div className="w-full sm:h-[400px] md:h-[500px] lg:h-[700px]">
         <Image
           src={AboutBanner}
@@ -14,7 +13,7 @@ const AboutPage = () => {
           className="lg:w-full lg:h-full object-cover"
         />
       </div>
-       {/* <FeatureData /> */}
+      {/* <FeatureData /> */}
       <div className="container mx-auto px-4 lg:px-0 mt-20 space-y-5 ">
         <h2 className="text-center text-xl font-bold uppercase tracking-tighter">
           Beyond the Dream, Since 2004
@@ -23,31 +22,28 @@ const AboutPage = () => {
           Uniquely Crafted Built to Last
         </h3>
         <p className="text-lg leading-[30px] text-gray-500">
-          Since 2004, Unique Bags has been driven by a simple vision — to create
-          bags that are not only practical, but also reflect quality,
-          individuality, and lasting craftsmanship. What began as a dream rooted
-          in passion and dedication has grown into a trusted name in the bag
-          manufacturing industry, built on years of experience, continuous
-          innovation, and a commitment to excellence. Over the years, we have
-          developed a diverse range of bags designed to meet the needs of modern
-          lifestyles and professional requirements. From travel bags, college
-          bags, and school bags to delivery bags, camera bags, tool bags, tote
-          bags, and musical instrument bags, every product is created with a
-          clear focus on functionality, durability, and ease of use. At Unique
-          Bags, we believe that a great bag is more than just something you
-          carry. It becomes part of your journey, your work, your everyday life,
-          and your experiences. That is why every product is thoughtfully
-          designed with attention to materials, construction, comfort, storage,
-          usability, and contemporary style. Our two decades of experience have
-          taught us that quality is built through consistency. We continue to
-          embrace changing trends, modern designs, and evolving customer needs
-          while preserving the craftsmanship and reliability that have shaped
-          our journey since 2004. From an idea to a finished product, every bag
-          carries our commitment to quality, precision, and purpose. 20+ Years
-          of Craftsmanship. One Unique Identity.
+          Since 2004 Unique Bags has had a vision. To make bags that are not
+          only useful but also show quality, uniqueness and long-lasting work.
+          What started as a dream based on love and hard work has become a name
+          people trust in the bag making business. This trust comes from years
+          of work, ideas and a wish to do the best. Over the years we have made
+          kinds of bags to fit the needs of todays life and work. From bags for
+          traveling for college for school to bags for delivering things for
+          cameras for tools for shopping and for instruments each bag is made
+          with a clear goal of being useful strong and easy to use. At Unique
+          Bags we think that a good bag is more than something you carry. It
+          becomes part of your trip your job, your daily life and your memories.
+          That is why each product is made with care thinking about the
+          materials the way it is made how comfortable it is, how much it can
+          hold, how easy it is to use and how it looks today. Our two decades of
+          work have shown us that good quality comes from doing things the way
+          each time. We keep up with styles, new designs and what customers want
+          while keeping the skills and reliability that have been part of our
+          journey since 2004. From an idea to a bag each one shows our promise
+          to do things right with care and, with a purpose. 20+ Years of Making
+          Things Well. One Special Name.
         </p>
       </div>
-   
     </div>
   );
 };

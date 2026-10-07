@@ -3,6 +3,7 @@
 import Image from "next/image";
 import React, { useState } from "react";
 import Contactbanner from "../../assets/contactbanner1.webp"
+import { MapPin, Phone, MessageCircle } from "lucide-react";
 const ContactForm = () => {
   const [formData, setFormData] = useState({
     name: "",
@@ -57,22 +58,90 @@ ${formData.message}
 
           {/* Left Content */}
           <div>
-            <p className="text-[#8A6348] uppercase tracking-[3px] text-sm font-semibold mb-4">
-              Get In Touch
-            </p>
+  <p className="text-[#8A6348] uppercase tracking-[3px] text-sm font-semibold mb-4">
+    Get In Touch
+  </p>
 
-            <h2 className="text-4xl lg:text-5xl font-serif text-[#4A2F20] leading-tight">
-              We Fulfill
-              <br />
-              <span className="italic">Your Style</span>
-            </h2>
+  <h2 className="text-4xl lg:text-5xl font-serif text-[#4A2F20] leading-tight">
+    We Fulfill
+    <br />
+    <span className="italic">Your Style</span>
+  </h2>
 
-            <p className="mt-6 text-[#765D4D] leading-7 max-w-lg">
-              Have a question, need a custom bag, or looking for more
-              information about our products? Get in touch with us and our
-              team will be happy to help you find the right bag for your needs.
-            </p>
-          </div>
+  <p className="mt-6 text-[#765D4D] leading-7 max-w-lg">
+    Have a question, need a custom bag, or looking for more
+    information about our products? Get in touch with us and our
+    team will be happy to help you find the right bag for your needs.
+  </p>
+
+  {/* Contact Details */}
+  <div className="mt-8 space-y-5">
+
+    {/* Location */}
+    <div className="flex items-start gap-4">
+      <div className="shrink-0 w-11 h-11 rounded-full bg-[#F3E8DD] flex items-center justify-center">
+        <MapPin className="w-5 h-5 text-[#8A6348]" />
+      </div>
+
+      <div>
+        <p className="text-[#4A2F20] font-semibold mb-1">
+          Visit Us
+        </p>
+
+        <p className="text-[#765D4D] leading-6">
+          Uthiyathode P.O., NH66
+          <br />
+          Door No: 6/391, Piller No: 234
+          <br />
+          Kodamthuruth, Chammanadu
+          <br />
+          Kerala – 688533
+        </p>
+      </div>
+    </div>
+
+    {/* Phone */}
+    <a
+      href="tel:+919447060659"
+      className="flex items-center gap-4 group"
+    >
+      <div className="shrink-0 w-11 h-11 rounded-full bg-[#F3E8DD] flex items-center justify-center group-hover:bg-[#8A6348] transition-colors">
+        <Phone className="w-5 h-5 text-[#8A6348] group-hover:text-white transition-colors" />
+      </div>
+
+      <div>
+        <p className="text-[#4A2F20] font-semibold">
+          Call Us
+        </p>
+        <p className="text-[#765D4D] group-hover:text-[#8A6348]">
+          +91 94470 60659
+        </p>
+      </div>
+    </a>
+
+    {/* WhatsApp */}
+    <a
+      href="https://wa.me/919447060659?text=Hi%20Unique%20Bags%2C%20I%20would%20like%20to%20know%20more%20about%20your%20bags."
+      target="_blank"
+      rel="noopener noreferrer"
+      className="flex items-center gap-4 group"
+    >
+      <div className="shrink-0 w-11 h-11 rounded-full bg-[#F3E8DD] flex items-center justify-center group-hover:bg-[#25D366] transition-colors">
+        <MessageCircle className="w-5 h-5 text-[#8A6348] group-hover:text-white transition-colors" />
+      </div>
+
+      <div>
+        <p className="text-[#4A2F20] font-semibold">
+          WhatsApp
+        </p>
+        <p className="text-[#765D4D] group-hover:text-[#25D366]">
+          +91 94470 60659
+        </p>
+      </div>
+    </a>
+
+  </div>
+</div>
 
           {/* Contact Form */}
           <div className="bg-white rounded-3xl p-6 md:p-8 lg:p-10 shadow-sm">
